@@ -1,0 +1,61 @@
+<!-- details list Section -->
+<section class="page-section" id="providers-details">
+    <div class="container">
+        <h2 class="text-center mt-0">{{company.company_name}}</h2>
+        <hr class="divider my-4">
+
+        <div class="row my-4">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Description</h5>
+                        <p class="card-text">{{company.description}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tagline</h5>
+                        <p class="card-text">{{company.tagline}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table table-hover table-boardered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Adress</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td scope="row">{{id}}</td>
+                        <td scope="row">{{company.address}}</td>
+                        <td scope="row">{{company.city}}</td>
+                        <td scope="row">{{company.phone}}</td>
+                        <td scope="row">{{company.email}}</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <div class="row my-4">
+            <div class="col-sm-12 text-center mb-3 mb-sm-0">
+                <a href="/providers/edit/{{id}}" class="btn btn-secondary btn-mg">Edit this provider</a>
+            </div>
+        </div>
+    </div>
+</section>
